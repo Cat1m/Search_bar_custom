@@ -7,11 +7,11 @@ class SearchableDropdown extends StatefulWidget {
   final void Function(Product) onItemSelected;
 
   const SearchableDropdown({
-    Key? key,
+    super.key,
     required this.items,
     required this.title,
     required this.onItemSelected,
-  }) : super(key: key);
+  });
 
   @override
   SearchableDropdownState createState() => SearchableDropdownState();
